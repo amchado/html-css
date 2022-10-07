@@ -1,0 +1,255 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+    font-family: android;
+    src: url('/fontes/idroid.otf') format('opentype');}
+
+:root{ 
+    --cor0:#C5EBD6;
+    --cor02:#2fa866;
+}
+
+*{box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+
+}   
+
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--cor0);
+    padding: 0px;
+    margin: 0px;
+    
+    
+}
+
+main{
+    margin: auto;
+    max-width: 800px;
+    min-width: 300px;
+    background-color: #ffffff;
+    box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.356);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-bottom: 10px;
+    
+
+}
+
+header{
+    background-image: linear-gradient(180deg, #2fa866, #063d1e );
+    height:180px;
+    padding: 5px 0px 10px 0px;
+    margin:0px;
+    
+    
+}
+
+header>h1{
+    text-align: center;
+    font-size: 2.7em;
+    font-weight: normal;
+    font-family:'Bebas Neue',cursive;
+    color: white;
+    margin: 0;
+    padding: 25px;    
+    text-shadow: 2px 3px 5px rgba(0, 0, 0, 0.575);
+}
+
+header>p{
+    text-align: center;
+    font-size: 1.2em;
+    color: white;
+    text-shadow: 2px 3px 5px rgba(0, 0, 0, 0.575);
+}
+
+nav{
+    background-color: #063d1e;
+    padding:0px 0px 18px 0px;
+    
+    
+}
+
+nav>a{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    text-shadow: 2px 3px 5px rgba(0, 0, 0, 0.575);
+
+}
+
+nav>a:hover{
+    color: #063d1e;
+    background-color: #35b870;
+    transition-duration: .5s;
+    
+}
+
+
+div.video{
+    background-color: #1A5C37;
+    margin: 0px 5px 15px 5px;
+    
+    padding-bottom: 54.3%;
+    position: relative;
+}
+
+div.video>iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90% ;
+    height: 90%;
+
+}
+
+div>h1{
+    font-family: android;
+    color: #063d1e;
+    font-weight: lighter;
+    padding: 12px 0px 8px 20px;
+    font-size: 1.8em;
+    margin: 0;
+}
+
+div>p{
+    text-align: justify;
+    text-indent: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 25px;
+    padding: 8px 10px 5px 10px;
+    font-size: 16px;
+}
+
+div>h2{
+    background-image:linear-gradient(to right, #44DD88, white);
+    font-family: android;
+    color: #063d1e;
+    font-weight: lighter;
+    margin-left: 10px;
+    padding:5px;
+    }
+
+strong{
+    color: #1A5C37;
+}
+
+.img1{
+    width: 100%;
+}
+
+p>a{
+    font-weight: bold;
+    text-decoration: none;
+    color: #0f301d;
+    background-color: #44dd8991;
+    padding: 4px;
+    border-radius: 2px;
+}
+
+p>a:hover{
+    text-decoration: underline;
+    color:#081a0f
+}
+
+p>a::after {
+    content: '\1F517'
+}
+
+.img2{
+    margin-right: 1px;
+    margin-left: 3px;
+    width: 98%;
+}
+
+.pequena{
+    margin: auto;
+}
+
+#a1{
+    display: flex;
+}
+
+aside>p{
+    text-align: justify;
+    text-indent: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 30px;
+    padding: 8px 10px 5px 10px;
+    font-size: 16px;
+}
+
+.a1{
+    font-weight: bold;
+    text-decoration: none;
+    color: #0f301d;
+    background-color: #44dd8991;
+    padding: 2px;
+}
+
+.a1:hover{
+    text-decoration: underline;
+    color:#081a0f}
+
+
+.a1::after {
+    content: '\1F517'
+}
+
+aside{
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif; 
+    margin: 20px;   
+    padding: 10px;
+    background-color: #4fff9e75;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.349);
+}
+
+aside>h3{
+    background-color: #0f301d;
+    color: white;
+    padding: 8px;
+    margin:-10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+aside>ul{
+    list-style-type: '\2714\00A0\00A0';
+    list-style-position: inside;
+    columns: 2;
+    
+}
+
+footer{
+    background-color: #1A5C37;
+    color: white;
+    text-align: center;
+    padding: 3px 0px;
+    font-size: 0.9em;
+    
+}
+
+footer>a{
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+    font-size: 1em;
+    
+}
+
+footer>a:hover{
+    text-decoration:underline;
+    color: #4fff9e;
+}

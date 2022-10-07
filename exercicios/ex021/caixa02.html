@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(95, 95, 95);
+            margin: 0px;
+            border-radius: 5px;
+        }
+
+        header{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 2px;
+            box-shadow: 3px 3px 3px rgba(172, 255, 47, 0.274) ;
+        }
+
+        header > h1 {
+            text-align: center;
+        }
+
+        nav{
+            background-color: black;
+            padding: 3px;
+            text-align: center;
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 15px;
+        }
+
+        nav > a:hover {
+            text-decoration: underline ;
+            color: greenyellow;
+
+
+        }
+
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 2px;
+            box-shadow: 3px 3px 3px rgba(172, 255, 47, 0.37) ;
+        }
+
+        article{
+            background-color: rgb(211, 211, 211);
+            padding: 5px 5px 5px 5px;
+            border-radius: 0px 0px 0px 0px;
+        }
+
+        article > h2 {
+            text-align: center;
+            background-color:rgba(172, 255, 47, 0.671);
+            border: 2px solid black;
+        }
+
+        aside{
+            border-radius: 0px 0px 0px 0px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding:4px;
+            margin:5px;
+            border-radius: 2px;
+            box-shadow: 3px 3px 3px rgba(172, 255, 47, 0.233) ;
+        }
+
+        footer > p:hover{
+            color: rgb(172, 255, 47);
+            
+        }
+
+        footer > p {
+            margin: 0px;
+        }
+
+        
+    </style>
+
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="assuntos">
+            <p>Esportes Politica Tecnologia</p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Noticias sobre o Brasil</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae autem ad dolores ipsum aut odio corporis sunt est ea minus soluta accusantium, eos laudantium, pariatur deserunt. Nostrum a officia nisi.</p>
+                <aside>Escrito por Arthur Lucas</aside>
+            </article>
+            <article></article>
+        </section>
+    </main>
+
+    <footer>
+        <p>Desenvolvido por Arthur Lucas</p>
+    </footer>
+    
+</body>
+</html>
