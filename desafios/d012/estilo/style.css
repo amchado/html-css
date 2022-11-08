@@ -19,7 +19,7 @@
 }
 
 html, body{
-    min-width: 100vh;
+    min-width: 70vh;
     background-color: rgb(209, 209, 209);
     font-family: var(--font1);
 }
