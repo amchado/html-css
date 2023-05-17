@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+/* Tela para impressora */
+
+*{
+    padding: 10px;
+    margin: 10px;
+}
+
+html{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5em;
+    line-height: 1.5em;
+}
+
+menu{  
+    display: none;
+}
+
+article::after{
+    content: 'Esse arquivo foi impresso no site "###" ';
+    font-size: 1em;
+}
