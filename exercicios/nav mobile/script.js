@@ -1,9 +1,17 @@
 const btnMobile = document.getElementById('btn-mobile')
 
-function ToggleMenu(){
-    const nav = document.getElementById('nav')
-    nav.classList.toggle('active')
-}
+        function toggleMenu(event){
+            if(event.type === 'touchstart') event.prevenDefault()
 
+            const nav = document.getElementById('nav')
+            nav.classList.toggle('active')
 
-btnMobile.addEventListener('click', ToggleMenu)
+            const active = nav.classList.contains('active')
+
+            event.currentTarget.setAttribute('aria-expanded', 'active')
+        }
+        
+        
+        btnMobile.addEventListener('click', toggleMenu)
+        btnMobile.addEventListener('touchstart', toggleMenu)
+        

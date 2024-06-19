@@ -33,7 +33,8 @@ a:hover{
     padding: 20px;
 
     color: white;
-    background-color: rgba(0, 0, 49, 0.89);
+    background-color: rgba(0, 0, 49, 0.808
+    );
 
 }
 
@@ -54,13 +55,81 @@ a:hover{
 
 @media (max-width: 600px){
 
-    #btn-mobile{
-        display: block;
-        padding: 5px;
-        font-weight: bold;
-    }
+   
 
     #menu{
-        display: none;
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 70px;
+        right: 0px;
+        transition: 0.6s;
+        height: 0px;
+        z-index: 1000;
+        visibility: hidden;
+        overflow-y: hidden;
+
+        background-color: rgba(0, 0, 49, 0.808);
+    }
+
+    #nav.active #menu{
+        display: block;
+        visibility: visible;
+        overflow-y:auto;
+
+
+        height: calc(100vh - 70px);
+    }
+
+    #menu a {
+        padding: 1rem 0;
+        margin: 0 1rem;
+        border-bottom: 2px  solid rgba(0, 0, 0, 0.349) ;
+    }
+
+    #btn-mobile{
+        display: flex;
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        background: none;
+        border: none;
+        color: white;
+        cursor: pointer;
+        gap: .5rem
+        ;
+    }
+
+    #hamburguer{
+        display: block;
+        border-top: 2px solid;
+        width: 20px;
+        
+    }
+
+    #hamburguer::after, #hamburguer::before{
+        content: '';
+        display: block;
+        width: 20px;
+        border-top: 2px solid;
+        margin-top: 5px;
+        background-color: currentColor;
+        transition: .3s;
+        position: relative;
+    }
+
+    #nav.active #hamburguer{
+        border-top: transparent;
+    }
+
+    #nav.active #hamburguer::after{
+        transform: rotate(-135deg);
+        top: -7px;
+        
+    }
+
+    #nav.active #hamburguer::before{
+        transform: rotate(135deg);
+        
+        
     }
 }
