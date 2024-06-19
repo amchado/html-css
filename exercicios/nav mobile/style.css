@@ -1,0 +1,66 @@
+body, ul{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+
+}
+
+a:hover{
+    background-color: rgba(0, 0, 0, 0.438);
+    
+    
+}
+
+#logo{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+
+
+#header{
+    box-sizing: border-box;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+
+    color: white;
+    background-color: rgba(0, 0, 49, 0.89);
+
+}
+
+#menu{
+    display: flex;
+    list-style: none;
+    gap: 10px;
+}
+
+#menu a {
+    display: block;
+    padding: .5rem
+}
+
+#btn-mobile{
+    display: none;
+}
+
+@media (max-width: 600px){
+
+    #btn-mobile{
+        display: block;
+        padding: 5px;
+        font-weight: bold;
+    }
+
+    #menu{
+        display: none;
+    }
+}
